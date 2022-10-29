@@ -11,14 +11,16 @@ body {
   flex-wrap: wrap;
   padding: 20px;
 }
+
 .form_div input {
   margin-top: 5px;
   margin-bottom: 20px;
 }
+
 .buttonStyle {
   cursor: pointer;
   padding: 10px 20px;
-  border: none;
+  /* border: none; */
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -27,8 +29,8 @@ body {
   text-transform: capitalize;
   color: #1A213E;
   font-weight: bold;
-
 }
+
 .container {
   padding: 20px;
   display: flex;
@@ -36,10 +38,10 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .heading {
   text-align: center;
   font-size: 40px;
-
 }
 
 .carDiv {

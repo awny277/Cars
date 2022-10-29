@@ -5,7 +5,9 @@ async function GetData_From_DataBase() {
     "https://6351a0c99d64d7c71304d214.mockapi.io/car"
   );
   let data = await responsse.json();
-
+  let heading = document.getElementById("heading");
+  heading.textContent = `(${data.length}) المنتجات`;
+  // console.log(data);
   // Handel Data To Html and css
   let final = await data.map((ele) => {
     let container = document.getElementById("container");
@@ -52,6 +54,7 @@ async function GetData_From_DataBase() {
     });
   });
 }
+
 window.onload = GetData_From_DataBase();
 
 //  Send Car Information (name , price , imageUrl , Description) to DataBase
